@@ -185,7 +185,7 @@ This file can be named as specified in collections.yml. In this example, we’ll
 The NFT's title, description, and media (image or video) will automatically be fetched from the blockchain using the token ID. You can find the tokenID of your NFTs using [ErgoTokens](https://ergotokens.org).
 
 ```yaml
-nfts:
+tokenids:
   - label: NFT #1
     tokenid: your_token_id_here
   - label: NFT #2
