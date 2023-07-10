@@ -87,10 +87,8 @@ Visit the [Demo page](https://sigma.gallery/demo/themepreview/) and use the drop
 ```yaml
 pageTitle: Your Project's Name
 pageDescription: Short description about your project for search engines
-logoText: Your Project's Name
-logoImage: URL to your logo
 ```
-Use either text or an image as your logo. Leave unused options blank.
+The page title will be inserted following the text "Sigma Gallery - ".
 
 ### Optional: Uploading your logo to Github
 Here’s how you can upload an image to the repository and then get a direct URL to the image.
