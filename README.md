@@ -1,4 +1,4 @@
-# Configuring your SigmaGallery
+# Configuring your Sigma Gallery
 
 ## Table of contents
 1. Introduction
@@ -22,7 +22,7 @@
 
 ## Introduction
 
-### Configuring your SigmaGallery
+### Configuring your Sigma Gallery
 Please note that it may take up to 5 minutes for changes made to the config files to be reflected on the website. It is important to follow the default syntax, as shown in the examples, when making changes. Failing to do so may result in incorrect data display on the page.
 
 ### Validating your .yml file
@@ -34,7 +34,7 @@ Select one of the provided themes and enter the information as demonstrated belo
 ```yaml
 theme: dark
 ```
-Visit the [Demo page](https://demo.ergo.cx/sigmagallery/themepreview/) and use the drop-down button in the top left corner to preview all available themes.
+Visit the [Demo page](https://sigma.gallery/demo/themepreview/) and use the drop-down button in the top left corner to preview all available themes.
 
 ### Available themes:
 ```yaml
@@ -201,7 +201,7 @@ tokenids:
 To add a favicon to your page, generate one from an image using a tool such as [realfavicongenerator](https://realfavicongenerator.net/). Then, upload the resulting “favicon.ico” file to the main repository. It is important to name the file exactly ‘favicon.ico’, otherwise the icon will not load.
 
 ### Editing the style.css file
-If you want to further change the appearance of your ergo.cx page, you can do so by editing the style.css file in the main repository. This file can adjust the style of your page. This is completely optional and only recommended if you know the basics of CSS.
+If you want to further change the appearance of your Sigma Gallery, you can do so by editing the style.css file in the main repository. This file can adjust the style of your page. This is completely optional and only recommended if you know the basics of CSS.
 
 For example, here is the default CSS code that controls the size of the logo:
 
@@ -211,7 +211,7 @@ For example, here is the default CSS code that controls the size of the logo:
   font-size: 30px;
 }
 ```
-You can experiment with different values to find a style that you like. Once you have made your changes, save the style.css file and refresh your ergo.cx page with CTRL + F5 to see the updated style. It may take a few minutes before changes are reflected.
+You can experiment with different values to find a style that you like. Once you have made your changes, save the style.css file and refresh your Sigma Gallery page with CTRL + F5 to see the updated style. It may take a few minutes before changes are reflected.
 
 ### Creating your own Custom Theme
 
