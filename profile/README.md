@@ -6,19 +6,12 @@
     2. Validating your .yml file
 2. Editing the theme.yml file
     1. Available themes
-3. Editing the data.yml file
-    1. Optional: Uploading your logo to Github
-4. Editing the links.yml file
-    1. Adding and removing links
-    2. Selecting icons from Font Awesome 6
-5. Banner
-6. Collections
+3. Banner
+4. Collections
     1. Editing the collections.yml file
     2. Editing the collection1.yml file
-7. Optional
-    1. Adding a favicon to your page
-    2. Editing the style.css file
-    3. Creating your own custom theme
+5. Optional
+    1. Creating your own custom theme
 
 ## Introduction
 
@@ -82,57 +75,6 @@ Visit the [Demo page](https://sigma.gallery/demo/themepreview/) and use the drop
 - winter-wonderland
 ```
 
-
-## Editing the data.yml file
-```yaml
-pageTitle: Your Project's Name
-pageDescription: Short description about your project for search engines
-```
-The page title will be inserted following the text "Sigma Gallery - ".
-
-### Optional: Uploading your logo to Github
-Here’s how you can upload an image to the repository and then get a direct URL to the image.
-
-1. First, navigate to the repository where you want to upload the image.
-2. Click on the Add file button and select Upload files. <br />
-3. Drag and drop the image file or click choose your files to select the image from your computer. <br />
-4. Enter a commit message and choose which branch you want to commit the changes to. Select the main branch. <br />
-5. Click on Commit changes to upload the image to the repository. <br />
-
-Once the image is uploaded, you can get a direct link to it by navigating to the image file in the repository. Right click the image and open it in a new tab. The raw.githubusercontent.com URL in the address bar can be used in the 'data.yml' to display your logo.
-
-## Editing the links.yml file
-```yaml
-links:
-  - label: Twitter
-    url: https://twitter.com/my_username
-    icon: fa-brands fa-twitter fa-fw
-  - label: Telegram
-    url: https://t.me/my_username
-    icon: fa-brands fa-telegram fa-fw
-  - label: Discord
-    url: https://discord.com/users/my_user_id
-    icon: fa-brands fa-discord fa-fw
-  - label: Skyharbor
-    url: https://www.skyharbor.io/my_profile
-    icon: fa-solid fa-sailboat fa-fw
-  - label: Auction House
-    url: https://ergoauctions.org/my_auctions
-    icon: fa-solid fa-brush fa-fw
-```
-### Adding and removing links
-The links added here will be displayed in the navigation menu. You have the option to add or remove links as desired. Please ensure that the correct syntax is used when making changes.
-
-### Icons
-You may select any icon from Font Awesome 6 by visiting their [website](https://fontawesome.com/icons). Once you have chosen an icon, a code snippet will be displayed in the following format:
-
-```html
-<i class="fa-solid fa-file"></i>
-```
-
-Copy the class name, in this example “fa-solid fa-file”, and paste it into the icon field in the links.json file as demonstrated in the example above.
-It is recommended to add "fa-fw" to the class. This will make sure the icons are equal in width.
-
 ## Banner
 The banner will be displayed at the top of the website. You can enter a title, description, an image, mint addresses, and links using small buttons with icons.
 It is recommended to use a square image for the banner. For example this could be one of your favorite NFTs.
@@ -158,6 +100,7 @@ bannerLinks:
 
 ## Collections
 You can display one or multiple collections.
+In most cases, a separate page is recommended.
 Use buttons to toggle between collections.
 If only one collection is specified, no buttons will be displayed and the single collection will be loaded automatically.
 
@@ -194,22 +137,6 @@ tokenids:
 ```
 
 ## Optional
-
-### Adding a favicon to your page
-To add a favicon to your page, generate one from an image using a tool such as [realfavicongenerator](https://realfavicongenerator.net/). Then, upload the resulting “favicon.ico” file to the main repository. It is important to name the file exactly ‘favicon.ico’, otherwise the icon will not load.
-
-### Editing the style.css file
-If you want to further change the appearance of your Sigma Gallery, you can do so by editing the style.css file in the main repository. This file can adjust the style of your page. This is completely optional and only recommended if you know the basics of CSS.
-
-For example, here is the default CSS code that controls the size of the logo:
-
-```css
-/* Logo */
-.logo-text  {
-  font-size: 30px;
-}
-```
-You can experiment with different values to find a style that you like. Once you have made your changes, save the style.css file and refresh your Sigma Gallery page with CTRL + F5 to see the updated style. It may take a few minutes before changes are reflected.
 
 ### Creating your own Custom Theme
 
