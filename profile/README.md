@@ -18,7 +18,7 @@ Please note that it may take up to 5 minutes for changes made to the config file
 It is recommended to validate your edited .yml file using a YAML validator such as [codebeautify's yaml validator](https://codebeautify.org/yaml-validator) if you have made big changes. This will ensure that your configuration is valid and will work correctly.
 
 ## Banner
-The banner will be displayed at the top of the website. You can enter a title, description, an image, mint addresses, and links using small buttons with icons.
+The banner will be displayed at the top of the page. You can enter a title, description, an image, mint addresses, and links using small buttons with icons.
 It is recommended to use a square image for the banner. For example this could be one of your favorite NFTs.
 
 ```yaml
