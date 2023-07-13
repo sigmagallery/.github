@@ -4,14 +4,10 @@
 1. Introduction
     1. Configuring your SigmaGallery
     2. Validating your .yml file
-2. Editing the theme.yml file
-    1. Available themes
-3. Banner
-4. Collections
+2. Banner
+3. Collections
     1. Editing the collections.yml file
     2. Editing the collection1.yml file
-5. Optional
-    1. Creating your own custom theme
 
 ## Introduction
 
@@ -20,60 +16,6 @@ Please note that it may take up to 5 minutes for changes made to the config file
 
 ### Validating your .yml file
 It is recommended to validate your edited .yml file using a YAML validator such as [codebeautify's yaml validator](https://codebeautify.org/yaml-validator) if you have made big changes. This will ensure that your configuration is valid and will work correctly.
-
-## Editing the theme.yml file
-Select one of the provided themes and enter the information as demonstrated below.
-
-```yaml
-theme: dark
-```
-Visit the [Demo page](https://sigma.gallery/demo/themepreview/) and use the drop-down button in the top left corner to preview all available themes.
-
-### Available themes:
-```yaml
-- autumn
-- autumn-sunset
-- city-lights
-- crimson-red
-- dark
-- darkmode
-- darkmode-blue
-- darkmode-green
-- darkmode-orange
-- darkmode-pink
-- darkmode-purple
-- darkmode-red
-- deep-blue
-- deep-red
-- desert-mirage
-- earthy-brown
-- forest-green
-- lavender-fields
-- light
-- lightmode
-- lightmode-blue
-- lilac-dreams
-- midnight-blue
-- midnight-purple
-- midnight-sky
-- mint-breeze
-- minty-fresh
-- ocean-breeze
-- purple-haze
-- rainforest
-- rustic-red
-- spring
-- spring-blossom
-- summer
-- summer-breeze
-- sunset-boulevard
-- teal-forest
-- tropical-paradise
-- twilight-blue
-- vibrant-orange
-- winter 
-- winter-wonderland
-```
 
 ## Banner
 The banner will be displayed at the top of the website. You can enter a title, description, an image, mint addresses, and links using small buttons with icons.
@@ -135,19 +77,3 @@ tokenids:
     tokenid: your_token_id_here
     format: video
 ```
-
-## Optional
-
-### Creating your own Custom Theme
-
-1. Open your SigmaGallery in Firefox.
-2. Right-click on the page and select "Inspect" to access the developer tools.
-3. In the developer tools, select the "Style Editor" tab.
-4. In the Style Editor, select the CSS file for your selected theme (e.g., `dark.css`).
-5. You will see the CSS code for the selected theme, which includes variables for different colors such as `--header`, `--text`, `--background`, etc.
-6. You can use a website such as [color-hex.com](https://www.color-hex.com/) or [coolors.co](https://coolors.co/) to see what each HEX color looks like and make changes to the values of the variables as desired. You can also use AI tools to generate a custom color palette for your theme.
-7. Changes you make to the CSS file will be reflected on your page in real-time, but they will only be visible to you until you refresh the page.
-8. If you are satisfied with your changes, copy all of the code from the Style Editor and paste it into the `style.css` file in your repository.
-9. Your new custom theme will now load automatically when you visit your SigmaGallery.
-
-By following these steps, you can easily edit your own theme and customize the appearance of your SigmaGallery using color palette generators or AI tools to create a unique look for your page.
