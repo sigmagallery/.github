@@ -40,17 +40,13 @@ bannerLinks:
     icon: fa-brands fa-discord fa-fw
 ```
 
-## Collections
-You can display one or multiple collections.
-In most cases, a separate page is recommended.
-Use buttons to toggle between collections.
-If only one collection is specified, no buttons will be displayed and the single collection will be loaded automatically.
+##Collections
+You can display one or multiple collections, in general multiple collections on a single listing is used for different seasons, generations, etc. In most cases, a separate page is recommended. You can use the buttons to toggle between collections. If only one collection is specified, no buttons will be displayed and the single collection will be loaded automatically.
 
-### Editing the collections.yml file
-Define your collections in this file.
-The label field sets the button label for each collection.
-The data field specifies the filename(s) of your collection(s).
-The specified files contain the data for each collection
+To retrieve data about your NFTs, you can use the tool provided by Sigma Gallery. Simply perform a search by token name or issued address, then copy the results from the “Search Results” box and paste them into your collection YAML file.
+
+**Editing the collections.yml file**
+Define your collections in this file. The label field sets the button label for each collection. The data field specifies the filename(s) of your collection(s). The specified files contain the data for each collection.
 
 ```yaml
 collections:
@@ -62,10 +58,10 @@ collections:
     data: collection3.yml
 ```
 
-### Editing the collection1.yml file
-This file can be named as specified in collections.yml. In this example, we’ll use collection1.yml. For each NFT, set the tokenID. It’s recommended to add a label for easy identification, but this is optional. By default, the tokenID will be treated as an image NFT. However, if you want to add a video NFT, you can do so by adding `format: video` to the corresponding entry.
+###Option 1: Displaying a collection using only tokenIds
+If you only have the tokenIds for your NFTs, you can create a YAML file containing a list of tokenIds to display your collection. This file can be named as specified in collections.yml. In this example, we’ll use collection1.yml. For each NFT, set the tokenid. It’s recommended to add a label for easy identification, but this is optional. By default, the media linked to the NFT retrieved using the tokenid will be treated as an image. However, if you want to add a video NFT, you can do so by adding "format: video" to the corresponding entry.
 
-The NFT's title, description, and media (image or video) will automatically be fetched from the blockchain using the token ID. You can find the tokenID of your NFTs using [ErgoTokens](https://ergotokens.org).
+The NFT’s title, description, and media (image or video) will automatically be fetched from the blockchain using the token ID. You can find the tokenID of your NFTs using ErgoTokens or be using Sigma Gallery's search tool.
 
 ```yaml
 tokenids:
@@ -77,3 +73,30 @@ tokenids:
     tokenid: your_token_id_here
     format: video
 ```
+
+###Option 2: Displaying a collection using full NFT data
+If you have the full data for your NFTs, including their name, description, and media URL, you can create a YAML file containing this data to display your collection. This file can be named as specified in collections.yml. In this example, we’ll use collection1.yml. For each NFT, set the tokenId, name, description, and either imageUrl or videoUrl, depending on whether the NFT is an image or video.
+
+You can use the tool provided by Sigma Gallery to search for your NFTs and retrieve their full data in YAML format. Simply perform a search by token name or issued address, then copy the results from the “Search Results” box and paste them into your collection YAML file.
+
+```yaml
+nfts:
+- tokenId: your_token_id_here
+  name: 'NFT #1'
+  description: 'Description of NFT #1'
+  imageUrl: 'https://example.com/image1.jpg'
+- tokenId: your_token_id_here
+  name: 'NFT #2'
+  description: 'Description of NFT #2'
+  imageUrl: 'https://example.com/image2.jpg'
+```
+
+###Using Sigma Gallery's NFT search
+
+[SG NFT Search](https://sigma.gallery/resources/nftsearch)
+
+Search by token name: In the “Search by token name” section, enter a search query to find assets with the specified name. You can also enter an optional address and description to further filter the results. Check the “Hide burned” checkbox if you want to exclude burned assets from the results. Click the “Search” button to perform the search. The results will be displayed in the “Search Results” box below. You can copy the results to your clipboard by clicking the “Copy results” button.
+
+Search by issued address: In the “Search by issued address” section, enter an address to find NFTs issued by that address. You can also enter an optional name and description to further filter the results. Check the “Hide burned” checkbox if you want to exclude burned NFTs from the results. Click the “Search” button to perform the search. The results will be displayed in the “Search Results” box below. You can copy the results to your clipboard by clicking the “Copy results” button.
+
+Search NFT data: In the “Search NFT data” section, enter a list of tokenIds from one of the previous searches. Check the “Hide burned+” checkbox if you want to exclude NFTs that are in one of the known burn addresses (note that this check may be slow). Click the “Submit” button to retrieve data about your NFT collection. The data will be displayed in YAML format in the “Search Results” box below. You can copy the data to your clipboard by clicking the “Copy results” button, and then paste it into a YAML file to display your NFT collection.
