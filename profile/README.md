@@ -41,7 +41,7 @@ bannerLinks:
 ```
 
 ## Collections
-You can display one or multiple collections, in general multiple collections on a single listing is used for different seasons, generations, etc. In most cases, a separate page is recommended. You can use the buttons to toggle between collections. If only one collection is specified, no buttons will be displayed and the single collection will be loaded automatically.
+You can display one or multiple collections. If only one collection is specified, no buttons will be displayed and the single collection will be loaded automatically.
 
 To retrieve data about your NFTs, you can use the tool provided by Sigma Gallery. Simply perform a search by token name or issued address, then copy the results from the “Search Results” box and paste them into your collection YAML file.
 
@@ -74,10 +74,12 @@ tokenids:
     format: video
 ```
 
-### Option 2: Displaying a collection using full NFT data
+### Option 2: Displaying a collection using full NFT data (Recommended)
 If you have the full data for your NFTs, including their name, description, and media URL, you can create a YAML file containing this data to display your collection. This file can be named as specified in collections.yml. In this example, we’ll use collection1.yml. For each NFT, set the tokenId, name, description, and either imageUrl or videoUrl, depending on whether the NFT is an image or video.
 
 You can use the tool provided by Sigma Gallery to search for your NFTs and retrieve their full data in YAML format. Simply perform a search by token name or issued address, then copy the results from the “Search Results” box and paste them into your collection YAML file.
+
+Using this method your NFTs will be displayed instantly.
 
 ```yaml
 nfts:
