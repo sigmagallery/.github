@@ -81,6 +81,8 @@ You can use the tool provided by Sigma Gallery to search for your NFTs and retri
 
 Using this method your NFTs will be displayed instantly.
 
+To ensure images are optimized in the correct format, add "format: gif" below the imageUrl as shown in the example below.
+
 ```yaml
 nfts:
 - tokenId: your_token_id_here
@@ -90,7 +92,8 @@ nfts:
 - tokenId: your_token_id_here
   name: 'NFT #2'
   description: 'Description of NFT #2'
-  imageUrl: 'https://example.com/image2.jpg'
+  imageUrl: 'https://example.com/image2.gif'
+  format: gif
 ```
 
 ### Using Sigma Gallery's NFT search
