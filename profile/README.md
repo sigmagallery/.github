@@ -98,7 +98,7 @@ nfts:
 
 ### Using Sigma Gallery's NFT search
 
-[NFT Search](https://sigma.gallery/resources/nftsearch)
+[NFT Search](https://sigma.gallery/nftsearch)
 
 Search by token name: In the “Search by token name” section, enter a search query to find assets with the specified name. You can also enter an optional address and description to further filter the results. Check the “Hide burned” checkbox if you want to exclude burned assets from the results. Click the “Search” button to perform the search. The results will be displayed in the “Search Results” box below. You can copy the results to your clipboard by clicking the “Copy results” button.
 
