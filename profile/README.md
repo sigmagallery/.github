@@ -19,7 +19,6 @@ It is recommended to validate your edited .yml file using a YAML validator such 
 
 ## Banner
 The banner will be displayed at the top of the page. You can enter a title, description, an image, mint addresses, and links using small buttons with icons.
-It is recommended to use a square image for the banner. For example this could be one of your favorite NFTs.
 
 ```yaml
 title: Title
@@ -81,7 +80,7 @@ You can use the tool provided by Sigma Gallery to search for your NFTs and retri
 
 Using this method your NFTs will be displayed instantly.
 
-To ensure images are optimized in the correct format, add "format: gif" below the imageUrl as shown in the example below.
+To ensure images are optimized in the correct format, if your collection contains gifs make sure you add "format: gif" below the imageUrl as shown in the example.
 
 ```yaml
 nfts:
