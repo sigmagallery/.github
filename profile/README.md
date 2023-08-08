@@ -63,13 +63,13 @@ If you only have the tokenIds for your NFTs, you can create a YAML file containi
 The NFT’s title, description, and media (image or video) will automatically be fetched from the blockchain using the token ID. You can find the tokenID of your NFTs using ErgoTokens or be using Sigma Gallery's search tool.
 
 ```yaml
-tokenids:
-  - label: NFT #1
-    tokenid: your_token_id_here
-  - label: NFT #2
-    tokenid: your_token_id_here
-  - label: Video NFT Example
-    tokenid: your_token_id_here
+tokenIds:
+  - name: NFT #1
+    tokenId: your_token_id_here
+  - name: NFT #2
+    tokenId: your_token_id_here
+  - name: Video NFT Example
+    tokenId: your_token_id_here
     format: video
 ```
 
